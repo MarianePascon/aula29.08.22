@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 3</title>
+</head>
+<style>
+    body{
+        background-color: aquamarine;
+        font-size: 40px;
+    }
+    button{
+        background-color: blue;
+        color: aquamarine;
+        align-items: center;
+        margin-top: 400px;
+        text-align: center;
+        padding: 0 auto;
+        width: 400px;
+        height: 70px;
+        font-size: 48px;
+       margin-left: 750px;
+    }
+   
+
+   </style>
+<body>
+    <button id="botao" onclick="ok()">Clique Aqui</button>
+
+    <script>
+        function ok(){
+          var idade = Number(window.prompt('Digite sua idade'))
+          var nome = window.prompt('digite seu nome')
+          var atual = new Date().getFullYear()
+          var ano = atual - idade 
+          var dias = idade * 365
+          var mes = idade * 12
+         document.write(`<h1 style="background-color: aquamarine; color: blue; font-size: 40px; text-align: center; margin: 200px;">Voce viveu ${dias} dias e ${mes} meses, nasceu no ano de ${ano} e se chama ${nome}</h1>`)
+        }
+      
+    </script>
+
+   
+</body>
+
+</html>
